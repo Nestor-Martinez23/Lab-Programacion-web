@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contendor{
+    background-color: white;
+    width: 95% ;
+    padding: 30px 50px 30px 50px;
+}
+header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.integrantes {
+    text-align: justify;
+    font-size: 25px;
+}
+table th,td{
+    padding-right: 10px;
+
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: gray;
+}
