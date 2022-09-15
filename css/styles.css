@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contendor{
+    background-color: white;
+    width: 95% ;
+    padding: 30px 50px 30px 50px;
+}
+header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.integrantes {
+    text-align: justify;
+    font-size: 25px;
+}
+table th,td{
+    padding-right: 10px;
+
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.navegacion__practicas {
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 2px;
+    color: black;
+  }
+a:hover{
+        cursor: pointer;
+        color: blue;
+    }
