@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles3.css">
+  <link rel="stylesheet" href="css/styles3.css">
+
+  <title>Practica No. 4</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="encabezado">
+      <h1>Practica No. 4 EQUIPO #6 </h1>
+    </div>
+
+    <div class="contenedor__info">
+      <h2 class="tema">
+        Conceptos básicos de HTML, XHTML y CSS
+      </h2>
+      <div>
+        <h2>Lenguajes Web</h2>
+
+        <p>En esta lección vamos a conocer los elementos básicos de dos lenguajes: HTML y CSS. Aunque tienen
+          distinta sintaxis y reglas, dependen fuertemente uno del otro. Al finalizar esta lección podrás
+          saber cómo crear paginas sencillas HTML, añadir imágenes, crear enlaces de una página a otra y
+          modificar su aspecto en pantalla utilizando CSS.</p>
+
+      </div>
+      <div>
+        <h2>
+          La estructura de la página web se basa en HTML
+        </h2>
+        <div class="contenedor2">
+          <div>
+
+            <p>
+              Los documentos HTML (iniciales de Hypertext Markup Language) utilizan la extensión .htm o .html.
+              Esta extensión avisa al navegador web o a un dispositivo como un teléfono móvil, que en este archivo
+              hay contenido HTML y dicho contenido se restituye en la ventana del navegador o la pantalla del
+              dispositivo siguiendo las reglas del lenguaje HTML.
+
+            </p>
+            <p>
+              Las etiquetas se utilizan para definir el contenido de una página HTML. Estas etiquetas quedan
+              enmarcadas dentro de los símbolos "menor que" (<) y "mayor que" (>) y se ponen al principio y al
+                final de un objeto o texto utilizado en la página HTML.
+            </p>
+            <p>
+              HTML y XHTML están estrechamente relacionados. Existe una lista de reglas definidas por el World
+              Wide Web Consortium (organismo de normalización que también se conoce como W3C) que especifican los
+              límites de HTML y XHTML.
+            </p>
+          </div>
+
+          <img src="imagenes2/htmlestructura.png" alt="">
+        </div>
+      </div>
+
+
+      <div>
+        <h2>Cómo se representa el código HTML en el navegador </h2>
+        <div class="contenedor2">
+
+          <img src="imagenes2/Partesdenavegacion.png" alt="">
+
+          <ol type="A">
+            <li>
+              <strong>Doctype: </strong> Esta línea indica al navegador que debe interpretar todo el código que sigue de
+              acuerdo con
+              un conjunto de reglas específico
+            </li>
+
+            <li>
+              <strong>Elemento HTML: </strong>
+              Este elemento contiene a los demás y le indica al navegador que contiene un documento HTML.
+            </li>
+
+            <li>
+              <strong>Elemento HEAD: </strong>
+              En esta sección aparece información sobre la página, pero no se muestra en la pantalla.
+            </li>
+
+            <li>
+              <strong>Elemento TITLE: </strong>
+              Cualquier contenido dentro de las etiquetas "title" se muestra en la parte superior del
+              navegador. Es lo que se utiliza cuando un usuario marca una página como "favorito" en el
+              navegador.
+            </li>
+
+            <li>
+              <strong>Elemento BODY: </strong>
+              Todo el contenido dentro del body se muestra en la ventana principal del navegador.
+            </li>
+
+            <li>
+              <strong>Elemento HEADING : </strong>
+              El primero de seis elementos de cabecera. El contenido dentro de un heading de nivel 1 se
+              muestra
+              en tipografías grandes y en negrita.
+            </li>
+
+            <li>
+              <strong>Elemento IMAGE: </strong>
+              Enlaza a un archivo de imagen y la muestra en pantalla.
+            </li>
+            <li>
+              <strong>Elemento PARAGRAPH: </strong>
+              Por defecto, el navegador añade un salto antes y después de este elemento, que suele
+              contener varias líneas de texto.
+            </li>
+            <li>
+              <strong>Elemento STRONG: </strong>
+              El texxto dentro de él se muesta en negrita
+            </li>
+
+            <li>
+              <strong>Elemento ORDERED LIST: </strong>
+              Abre una lista de elementos en forma de lineas numeradas por orden.
+            </li>
+            <li>
+              <strong>Elemento LIST: </strong>
+              Cada linea con etiqueats recibe automaticamente un numero ordinal empezando por el 1.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div>
+        <h2>
+          Detalles de la sintaxis de XHTML
+        </h2>
+        <p>
+          Hay una diferencia esencial entre HTML 4.0 y XHTML 1.0 los dos estándares más recientes publicados
+          por el W3C (World Wide Web Consortium). Tal y como está definido el XHTML, las páginas escritas en
+          XHTML se pueden ver también en los navegadores que muestran las páginas HTML actuales. Las etiquetas
+          y atributos de XHTML y HTML siguen siendo las mismas, pero la sintaxis del código XHTML es más
+          estricta.
+        </p>
+        <ul>
+          <li>
+            En XHTML, todas las etiquetas deben escribirse en minúsculas.
+          </li>
+          <li>
+            XHTML exige que todas las etiquetas de apertura lleven su correspondiente etiqueta de cierre,
+            es decir, siempre debe existir una etiqueta al principio y otra al final de cualquier elemento,
+            sea un título, párrafo, imagen u otro.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>
+          Doctype indica al navegador qué debe esperar
+        </h2>
+        <p>
+          Al inicio de toda página web debe aparecer una declaración Doctype. La declaración de "tipo de
+          documento" le aporta pistas al navegador sobre el tipo de información que se va a encontrar en la
+          página. Puesto que las especificaciones de HTML y XHTML son distintas, el navegador sabe así qué
+          lenguaje va a interpretar y representar. El navegador restituye la página empezando por la primera
+          línea y va avanzando de principio a fin, por lo que esta indicación en la primera línea de todas
+          tiene pleno sentido. Aunque no es obligatoria, es una buena práctica empezar siempre utilizando
+          doctype al principio de nuestras páginas.
+        </p>
+      </div>
+
+      <div>
+        <h2>
+          El W3C y la validación de la página
+        </h2>
+        <p>
+          W3C es la abreviatura con la que se conoce al World Wide Web Consortium una organización sin ánimo
+          de lucro cuyo objetivo consiste en orientar la evolución de la Web. El W3C ofrece directrices y
+          reglas para especificaciones como HTML y XHTML. Una forma de definir la validez del código HTML o
+          XHTML que generamos es utilizar el servicio online de validación del W3C, que es gratuito.
+        </p>
+      </div>
+
+      <div>
+        <h2>
+          Otras ventajas del diseño basado en estándares
+        </h2>
+        <p>
+          La validación de páginas del W3C es el aspecto más tangible de un diseño web conforme a estándares,
+          pero hay también otras ventajas importantes al crear páginas bien estructuradas:
+        </p>
+        <ul>
+          <li>
+            <strong>Menos código:</strong> el uso de HTML y CSS nos permite crear páginas similares con
+            menos líneas de código, es decir, menos trabajo para el desarrollador y tiempos de descarga
+            menores para el visor
+          </li>
+          <li>
+            <strong>Mantenimiento más sencillo:</strong> tener menos código supone un mantenimiento más
+            sencillo, y esto beneficia tanto al que escribe el código como a cualquier otra persona que
+            después deba encargarse de su mantenimiento y revisión.
+          </li>
+          <li>
+            <strong>Accesibilidad:</strong> los documentos creados de forma semántica, es decir, que
+            utilizan la etiqueta HTML más adecuada a su función en cada momento, pueden facilitar la lectura
+            y navegación a personas con discapacidad visual y los usuarios que los visitan encuentran la
+            información más fácilmente.
+          </li>
+          <li>
+            <strong>Optimización para motores de búsqueda:</strong> Las páginas web que incluyen secciones
+            claras e identificadas de forma lógica, tanto a nivel de código como de contenidos, facilitan la
+            labor a los motores de búsqueda a la hora de indexarlas y clasificarlas
+          </li>
+          <li>
+            <strong>Compatibilidad:</strong> los sitios web que independizan la estructura con respecto al
+            estilo se adaptan mucho más fácilmente a dispositivos móviles y formatos de pantalla variados.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>
+          Estructura HTML
+        </h2>
+        <p>
+          Uno de los conceptos más importantes que debemos dominar a la hora de diseñar contenidos web es la
+          estructura anidada de los documentos HTML. Los elementos suelen presentarse contenidos unos dentro
+          de otros. Por lo general tenemos que empezar por diseñar la estructura HTML de la página para
+          después continuar con los estilos, aplicando CSS.
+          En este ejemplo podemos ver los elementos más básicos que nos vamos a encontrar en prácticamente
+          toda página web:
+
+        </p>
+        <pre>
+
+                        <.html> 
+                            <.body> 
+
+                            <./body> 
+                        <./html>
+                </pre>
+        <p>
+          El elemento <.body> está anidado (incluido) dentro del elemento <.html>. En términos de
+              programación,
+              <.body> está colocado entre la etiqueta de apertura <.html> y la de cierre <. /html>, y por
+                    eso decimos que las etiquetas anidadas son las que se encuentran
+                    entre otras etiquetas de apertura y cierre. Ambos elementos, <.body> y <.html>,
+                        forman la estructura básica de toda página web. Cuando un navegador abre
+                        un documento HTML busca esta estructura.
+        </p>
+      </div>
+
+      <div>
+        <h2>Insertar imágenes en HTML</h2>
+        <p>
+          Para colocar imágenes dentro de un documento HTML se utiliza la etiqueta <.img>. Al igual que ocurre
+            con la etiqueta <.a>, la etiqueta de imagen por sí sola no hace nada. Depende del valor de los
+              atributos que especifiquemos, que indican qué imagen se debe mostrar y cómo ha de hacerse.
+        </p>
+      </div>
+
+      <div>
+        <h2>
+          El empleo de atributos opcionales
+        </h2>
+        <p>
+          Muchos de los atributos opcionales se encuadran dentro de lo que se denomina "buenas prácticas". Las
+          buenas prácticas son un concepto amplio, que se utiliza para describir la manera generalmente
+          aceptada de hacer las cosas en el diseño y programación para la Web. Hay, en general, razones de
+          sentido común detrás de las buenas prácticas: por ejemplo, al indicar la altura y la anchura se crea
+          un espacio (conocido como "placeholder") para la imagen, y permanece aún en el caso de que la imagen
+          no se haya descargado, debido a la lentitud de la conexión.
+        </p>
+      </div>
+
+      <div>
+        <h2>
+          El papel de CSS
+        </h2>
+        <p>
+          CSS (Cascading Style Sheets) utiliza un lenguaje distinto de HTML. CSS nos permite aplicar estilos
+          de manera coherente a los distintos elementos de las páginas del sitio web, de modo que los títulos,
+          listas y párrafos pueden verse igual en todas y cada una de las páginas.
+        </p>
+        <img src="imagenes2/PartesCss.png" alt="">
+        <ol type="A">
+          <li>
+            Selector
+          </li>
+          <li>Declaracion</li>
+          <li>Propiedad</li>
+          <li>Valor</li>
+        </ol>
+      </div>
+
+      <div>
+        <h2>
+          Notación hexadecimal de color
+        </h2>
+        <div class="contenedor2">
+          <div>
+
+
+            <p>
+              El color, tanto en HTML como CSS, se designa mediante un código de seis caracteres precedido por el signo
+              de
+              almohadilla. A esta notación se le llama código hexadecimal, y es el sistema que se utiliza para
+              identificar
+              y
+              establecer el color de los elementos. Con esta notación podemos reproducir prácticamente cualquier color.
+              Por
+              ejemplo, el color rojo oscuro se representa como #CC0000.
+            </p>
+            <p>
+              El código se divide en tres pares de dígitos, y cada uno de ellos representa el valor RGB del espectro.
+              Por
+              ejemplo, el color blanco se representa en notación RBG como R:255 G:255 B:255, y su equivalente en HTML en
+              formato hexadecimal es #FFFFFF
+            </p>
+          </div>
+          <img src="imagenes2/cssrgb.PNG" alt="">
+
+        </div>
+
+
+      </div>
+
+      <div>
+        <h2>Cambiar el tamaño del texto con CSS</h2>
+        <p>Podemos modificar el valor de la propiedad font-size de varias formas:</p>
+        <p><strong>Tamaño absoluto:</strong> se trata de una serie de palabras clave que indican tamaños predefinidos
+          de letra, Los valores posibles xx-small, x-small, small, medium, large, x-large y xx-large.</p>
+        <p>
+          <strong>Longitud: </strong> Es un número seguido de un indicador del sistema de medida (cm, mm, in, pt, o pc)
+          o bien un de unidades relativas (em, ex, o px).
+        </p>
+        <p>
+          <strong>Porcentaje:</strong> Un entero seguido del signo de porcentaje (%).
+        </p>
+        <p>
+          <strong>Tamaño relativo:</strong> Los valores posibles son larger y smaller.
+        </p>
+        <p>
+          El texto en monitores pequeños a menudo tiene un aspecto distinto de como aparecen en monitores de gran
+          formato; con un poco de previsión podemos resolver este problema, imaginando el efecto en cada caso.
+        </p>
+        <img src="imagenes2/tamañotexto.png" alt="">
+      </div>
+
+
+      <div>
+        <h2>Preguntas</h2>
+        <h3>1.- ¿Que es un XML y para que sirve? </h3>
+        <p>
+          XML es un lenguaje de marcado similar a HTML. Significa Extensible Markup Language (Lenguaje de Marcado
+          Extensible) y es una especificación de W3C como lenguaje de marcado de propósito general. Esto significa que,
+          a diferencia de otros lenguajes de marcado, XML no está predefinido, por lo que debes definir tus propias
+          etiquetas. El propósito principal del lenguaje XML es generalmente para propósitos descriptivos, compartir
+          datos a través de diferentes sistemas, como Internet.
+        </p>
+
+        <h3>
+          2.- ¿Que características tiene un documento HTML?
+        </h3>
+        <ul>
+          <li>Puede ser creado y editado con cualquier editor básico de textos.</li>
+          <li>
+            Es multiplataforma, o sea, puede ser visualizado por cualquier navegador de cualquier sistema operativo.
+          </li>
+          <li>No diferencia entre mayúsculas y minúsculas.</li>
+          <li>Utiliza etiquetas o marcas, que consisten en breves instrucciones de comienzo y final, mediante las cuales
+            se determina la forma en la que debe aparecer en su navegador el texto, así como también las imágenes y
+            demás elementos en la pantalla del ordenador.</li>
+          <li> Cada elemento de un documento HTML consta de una etiqueta de comienzo, un bloque de texto y una etiqueta
+            de
+            fin.</li>
+          <li>Lenguaje estático.</li>
+          <li>Es utilizado para la creación de páginas web.</li>
+          <li>Los documentos HTML son documentos de hipertexto que aparecen enlazando a otros documentos.</li>
+        </ul>
+
+        <h3>
+          3.- ¿Qué es y para qué sirve un archivo XHTML?.
+        </h3>
+        <p>
+          XHTML significa lenguaje de marcado de hipertexto extendido. Es una reformulación del lenguaje HTML que ahora
+          pasa a ser compatible con el estándar XML, considerándose que se incluye en la familia de los Lenguajes de
+          Marcado. Se utiliza para generar documentos y contenidos de hipertexto generalmente publicados en la Web.
+        </p>
+
+      </div>
+
+
+
+
+    </div>
+
+    <div class="conclusiones">
+      <div>
+
+
+        <h2>Conclusiones</h2>
+        <div>
+          <p><strong>Nestor Emiliano Martinez Marin 1798117 ITS</strong></p>
+          <p>
+            La flexibilidad de HTML puede parecer un aspecto positivo, pero el resultado final son páginas con un código
+            HTML desordenado, difícil de mantener y muy poco profesional. Afortunadamente, XHTML soluciona estos
+            problemas añadiendo ciertas normas en la forma de escribir las etiquetas y atributos.
+          </p>
+
+        </div>
+        <div>
+          <p> <strong>Axel Alexis Chávez Monsiváis 1907168 IAS</strong></p>
+          <P>
+            Durante la practica logre entender mejor las distintas opciones que da CSS y HTML, además de entender el
+            XHTML el cual es parecido al HTML siendo que estos dos funcionan bien, la mayoría de las cosas que se
+            mostraron ya sabía sobre ellas, pero también hay varias cosas que pude saber cómo se hacían exactamente
+            debido a esta práctica, había otras cosas que tenia conocimiento, pero no sabia casi nada como el XTHML y el
+            XML.
+
+          </P>
+        </div>
+
+
+        <div>
+          <p> <strong>José Ernesto Rodríguez Alfaro 2035732 ITS</strong></p>
+          <p>
+            Gracias a la práctica logre entender mejor las diferencias entre XML y HTML, las reglas que estos conllevan
+            como en sintaxis y ordenamiento, también adquirir conocimientos sobre XHTML, ya que nunca había investigado
+            del tema, y de su funcionamiento ala hora de desarrollar en web, también más conocimiento en HTML y css como
+            de las opciones que estos ofrecen y las ventajas al usarlos de manera conjunta.
+          </p>
+        </div>
+
+        <div>
+          <p> <strong>José Francisco Guerrero Mata 1819702 IAS</strong></p>
+          <p>
+            El uso de CSS es muy importante para darle diseño de color y tamaño a nuestra página web por completo,
+            existen muchas etiquetas para poder modificar el color de las letras, el tamaño del texto, pero también
+            debemos de tener en cuenta al realizar estas modificaciones que no todos los usuarios que entren a la página
+            la puedan ver como se realizó en un principio, esto debido a que cada usuario cuenta con su propia
+            configuración de letras predeterminadas, asimismo aprendí más de como modificar y diseñar dentro de una
+            página web para poder llevarlo a mi proyecto final.
+          </p>
+
+        </div>
+
+        <div>
+          <p><strong>Ángel Gabriel Martinez Belmares 1904590 ITS</strong> </p>
+          <p>
+            Después de haber desarrollado la practica puedo concluir que XML es un lenguaje muy parecido a HTML, pero
+            con ciertas ventajas y desventajas, ya que este fue diseñado para cumplir con un propósito parecido, más no
+            igual y que dependerá de lo que estemos buscando hacer, deberemos elegir uno u otro como más nos sea
+            conveniente.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="navegacion">
+      <nav>
+        <a href="practica3.html">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="36"
+            height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+          </svg>
+          <br>
+          <p>Practica No. 3</p>
+        </a>
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="36" height="36"
+            viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg>
+          <br>
+          <p>Portada</p>
+        </a>
+        <a href="practica5.html">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="36"
+            height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+          </svg>
+          <br>
+          <p>Practica No. 5</p>
+        </a>
+      </nav>
+    </div>
+    <footer>
+      <p>
+        Laboratorio de Programacion Web - Equipo #6
+      </p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
