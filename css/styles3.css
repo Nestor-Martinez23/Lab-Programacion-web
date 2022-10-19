@@ -35,7 +35,7 @@ html{
     color: blue;
   }
   .encabezado{
-    background-image: url(imagenes2/fondoheader.png);
+    background-image: url(../imagenes2/fondoheader.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
