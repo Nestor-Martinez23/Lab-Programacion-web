@@ -80,16 +80,245 @@
                 <div>
                     <button onclick="myCanvas()" style="width: 70px; height:70px">Dibujar copia en canvas</button>
 
+
                 </div>
 
                 <section>
 
                     <canvas id="myCanvas" width="350" height="400"
-                        style="border: 2px solid red; background-color: black;"></canvas>
+                        style="border: 2px solid red; background-color: black;">
+
+                    </canvas>
 
                 </section>
 
+
+
             </article>
+            <section style="display: flex; justify-content: center;">
+                <canvas id="lienzo" width="920" height="920" style="background:burlywood;"></canvas>
+                <script>
+                    var c = document.getElementById("lienzo");
+                    var contexto = c.getContext("2d");             //contorno figura
+                    contexto.fillStyle = "black"
+                    contexto.fillRect(250, 60, 50, 50);
+                    contexto.fillRect(250, 10, 350, 50);
+                    contexto.fillRect(200, 60, 50, 50);
+                    contexto.fillRect(150, 110, 50, 50);
+                    contexto.fillRect(100, 160, 50, 100);
+                    contexto.fillRect(50, 260, 50, 350);
+                    contexto.fillRect(100, 610, 50, 50);
+                    contexto.fillRect(150, 660, 100, 50);
+                    contexto.fillRect(200, 710, 150, 50);
+                    contexto.fillRect(250, 760, 100, 50);
+                    contexto.fillRect(350, 810, 200, 50);
+                    contexto.fillRect(650, 60, 50, 50);
+                    contexto.fillRect(700, 110, 50, 50);
+                    contexto.fillRect(750, 160, 50, 100);
+                    contexto.fillRect(800, 260, 50, 350);
+                    contexto.fillRect(750, 610, 50, 50);
+                    contexto.fillRect(650, 660, 100, 50);
+                    contexto.fillRect(550, 710, 150, 50);
+                    contexto.fillRect(550, 760, 100, 50);
+                    contexto.fillRect(600, 60, 50, 50);
+
+
+                    var b = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "grey"               //negro
+
+
+
+                    contexto.fillRect(150, 510, 50, 50);
+                    contexto.fillRect(700, 510, 50, 50);
+                    contexto.fillRect(200, 560, 150, 50);
+                    contexto.fillRect(550, 560, 150, 50);
+                    contexto.fillRect(300, 610, 50, 100);
+                    contexto.fillRect(550, 610, 50, 100);
+                    contexto.fillRect(400, 610, 100, 50);
+                    contexto.fillRect(350, 510, 200, 50);
+
+
+
+                    var a = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "purple"                //verde oscuro
+                    contexto.fillRect(100, 560, 50, 50);
+                    contexto.fillRect(100, 510, 50, 50);
+                    contexto.fillRect(750, 560, 50, 50);
+                    contexto.fillRect(750, 510, 50, 50);
+
+
+
+
+                    var a = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "red"                 //verde mas claro
+
+                    contexto.fillRect(650, 210, 50, 50);
+                    contexto.fillRect(250, 610, 50, 50);
+                    contexto.fillRect(600, 610, 50, 50);
+                    contexto.fillRect(500, 610, 50, 50);
+                    contexto.fillRect(350, 610, 50, 50);
+                    contexto.fillRect(400, 60, 100, 50);
+                    contexto.fillRect(150, 560, 50, 50);
+                    contexto.fillRect(700, 560, 50, 50);
+                    contexto.fillRect(400, 110, 100, 50);
+                    contexto.fillRect(350, 110, 50, 50);
+                    contexto.fillRect(500, 110, 50, 50);
+                    contexto.fillRect(150, 160, 600, 50);
+                    contexto.fillRect(150, 210, 600, 50);
+                    contexto.fillRect(100, 460, 50, 50);
+                    contexto.fillRect(200, 360, 50, 50);
+                    contexto.fillRect(200, 410, 50, 50);
+                    contexto.fillRect(200, 460, 100, 50);
+                    contexto.fillRect(150, 410, 50, 50);
+                    contexto.fillRect(150, 460, 50, 50);
+                    contexto.fillRect(150, 260, 200, 50);
+                    contexto.fillRect(550, 260, 200, 50);
+                    contexto.fillRect(250, 360, 50, 50);
+                    contexto.fillRect(200, 310, 100, 50);
+                    contexto.fillRect(250, 410, 50, 50);
+                    contexto.fillRect(650, 460, 50, 50);
+                    contexto.fillRect(650, 410, 50, 50);
+                    contexto.fillRect(650, 360, 50, 50);
+                    contexto.fillRect(600, 460, 50, 50);
+                    contexto.fillRect(550, 460, 50, 50);
+                    contexto.fillRect(550, 410, 50, 50);
+                    contexto.fillRect(500, 460, 50, 50);
+                    contexto.fillRect(450, 460, 50, 50);
+                    contexto.fillRect(400, 460, 50, 50);
+                    contexto.fillRect(350, 460, 50, 50);
+                    contexto.fillRect(300, 460, 50, 50);
+                    contexto.fillRect(300, 410, 50, 50);
+                    contexto.fillRect(600, 360, 50, 50);
+                    contexto.fillRect(600, 410, 50, 50);
+                    contexto.fillRect(600, 310, 100, 50);
+                    contexto.fillRect(700, 410, 50, 50);
+                    contexto.fillRect(700, 460, 100, 50);
+
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "#FF9600"                //naranja mas oscuro
+
+
+                    contexto.fillRect(200, 510, 50, 50);
+                    contexto.fillRect(300, 510, 50, 50);
+                    contexto.fillRect(550, 510, 50, 50);
+                    contexto.fillRect(650, 510, 50, 50);
+
+
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "green"                   //blanco
+
+
+
+                    contexto.fillRect(250, 510, 50, 50);
+
+
+                    contexto.fillRect(600, 510, 50, 50);
+
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "white"                   //Fondo blanco
+
+                    contexto.fillRect(0, 11, 250, 50);
+                    contexto.fillRect(650, 11, 270, 50);
+                    contexto.fillRect(700, 60, 230, 50);
+                    contexto.fillRect(750, 110, 170, 50);
+                    contexto.fillRect(800, 160, 130, 50);
+                    contexto.fillRect(800, 210, 130, 50);
+                    contexto.fillRect(850, 260, 80, 50);
+                    contexto.fillRect(850, 310, 80, 50);
+                    contexto.fillRect(850, 360, 80, 50);
+                    contexto.fillRect(850, 410, 80, 50);
+                    contexto.fillRect(850, 460, 80, 50);
+                    contexto.fillRect(850, 510, 80, 50);
+                    contexto.fillRect(850, 560, 80, 50);
+                    contexto.fillRect(800, 610, 170, 50);
+                    contexto.fillRect(750, 660, 170, 50);
+                    contexto.fillRect(700, 710, 230, 50);
+                    contexto.fillRect(650, 760, 270, 50);
+                    contexto.fillRect(550, 810, 370, 50);
+                    contexto.fillRect(0, 860, 920, 50);
+                    contexto.fillRect(0, 810, 350, 50);
+                    contexto.fillRect(0, 760, 250, 50);
+                    contexto.fillRect(0, 710, 200, 50);
+                    contexto.fillRect(0, 660, 150, 50);
+                    contexto.fillRect(0, 610, 100, 50);
+                    contexto.fillRect(0, 60, 50, 600);
+                    contexto.fillRect(0, 60, 200, 50);
+                    contexto.fillRect(0, 110, 150, 50);
+                    contexto.fillRect(50, 160, 50, 100);
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "black"                   //Borde Canva
+
+                    contexto.fillRect(0, 910, 920, 10);
+                    contexto.fillRect(910, 0, 10, 910);
+                    contexto.fillRect(0, 0, 10, 920);
+                    contexto.fillRect(0, 0, 920, 10);
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "yellow"
+                    //verde oscuro
+                    contexto.fillRect(150, 610, 100, 50);
+                    contexto.fillRect(350, 560, 200, 50);
+                    contexto.fillRect(650, 610, 100, 50);
+                    contexto.fillRect(600, 660, 50, 50);
+                    contexto.fillRect(250, 660, 50, 50);
+                    contexto.fillRect(350, 660, 200, 150);
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "#118ACC"
+                    //fondo - azul
+                    contexto.fillRect(10, 10, 40, 900);
+                    contexto.fillRect(50, 10, 50, 250);
+                    contexto.fillRect(100, 10, 50, 150);
+                    contexto.fillRect(150, 10, 50, 100);
+                    contexto.fillRect(200, 10, 50, 50);
+                    contexto.fillRect(250, 10, 50, 50);
+
+
+                    contexto.fillRect(650, 10, 50, 50);
+                    contexto.fillRect(700, 10, 50, 100);
+                    contexto.fillRect(750, 10, 50, 150);
+                    contexto.fillRect(800, 10, 50, 250);
+
+                    contexto.fillRect(850, 10, 60, 900);
+                    contexto.fillRect(50, 610, 50, 300);
+                    contexto.fillRect(100, 660, 50, 250);
+                    contexto.fillRect(150, 710, 50, 200);
+                    contexto.fillRect(200, 760, 50, 150);
+                    contexto.fillRect(250, 810, 100, 100);
+
+                    contexto.fillRect(800, 610, 50, 300);
+                    contexto.fillRect(750, 660, 50, 250);
+                    contexto.fillRect(700, 710, 50, 200);
+                    contexto.fillRect(650, 760, 50, 150);
+                    contexto.fillRect(550, 810, 100, 100);
+
+                    contexto.fillRect(350, 860, 200, 50);
+
+                </script>
+            </section>
+
 
 
         </section>
@@ -101,83 +330,51 @@
                 <h3 class="tema">Conclusiones</h2>
 
                     <div>
-                        <p><strong>Ángel Gabriel Martinez Belmares 1904590 ITS</strong> </p>
-                        <p>
-                            Después de haber desarrollado la practica puedo concluir que XML es un lenguaje muy parecido
-                            a
-                            HTML, pero
-                            con ciertas ventajas y desventajas, ya que este fue diseñado para cumplir con un propósito
-                            parecido, más no
-                            igual y que dependerá de lo que estemos buscando hacer, deberemos elegir uno u otro como más
-                            nos
-                            sea
-                            conveniente.
-                        </p>
-                    </div>
-                    <div>
-                        <p> <strong>José Ernesto Rodríguez Alfaro 2035732 ITS</strong></p>
-                        <p>
-                            Gracias a la práctica logre entender mejor las diferencias entre XML y HTML, las reglas que
-                            estos conllevan
-                            como en sintaxis y ordenamiento, también adquirir conocimientos sobre XHTML, ya que nunca
-                            había
-                            investigado
-                            del tema, y de su funcionamiento ala hora de desarrollar en web, también más conocimiento en
-                            HTML y css como
-                            de las opciones que estos ofrecen y las ventajas al usarlos de manera conjunta.
-                        </p>
-                    </div>
-
-                    <div>
                         <p><strong>Nestor Emiliano Martinez Marin 1798117 ITS</strong></p>
                         <p>
-                            La flexibilidad de HTML puede parecer un aspecto positivo, pero el resultado final son
-                            páginas
-                            con un código
-                            HTML desordenado, difícil de mantener y muy poco profesional. Afortunadamente, XHTML
-                            soluciona
-                            estos
-                            problemas añadiendo ciertas normas en la forma de escribir las etiquetas y atributos.
+                            El elemento canvas en Html nos permite generar graficos y animaciones de una manera
+                            dinamica, por medio de scripts y que gracias a estos se pueden crear animaciones que den mas
+                            persdonalidad a nuestra pagina web y todo esto sin la necesidad de insatalar programamas o
+                            complementos en nuestro naveagdor.
+
                         </p>
 
                     </div>
-
-
                     <div>
                         <p> <strong>Axel Alexis Chávez Monsiváis 1907168 IAS</strong></p>
                         <P>
-                            Durante la practica logre entender mejor las distintas opciones que da CSS y HTML, además de
-                            entender el
-                            XHTML el cual es parecido al HTML siendo que estos dos funcionan bien, la mayoría de las
-                            cosas
-                            que se
-                            mostraron ya sabía sobre ellas, pero también hay varias cosas que pude saber cómo se hacían
-                            exactamente
-                            debido a esta práctica, había otras cosas que tenia conocimiento, pero no sabia casi nada
-                            como
-                            el XTHML y el
-                            XML.
+                            cuando comence la practica no tenia idea de como hacerlo, pero luego de investigar y
+                            haciendolo poco a poco al final empezaba a ser algo muy facil de hacer, a pesar de que es
+                            tardado, en verdad no es dificil, sin embargo aun asi de vez en cuando me confundia pero
+                            cuando empece a saber usar mejor las cordenadas el dibujo fue haciendose cada vez mas facil
+                            y rapido, esta es una herramienta que tal vez no es muy conveniente en muchas paginas pero
+                            habra otras que sera muy util.
 
                         </P>
                     </div>
 
                     <div>
+                        <p><strong>Ángel Gabriel Martinez Belmares 1904590 ITS</strong> </p>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div>
+                        <p> <strong>José Ernesto Rodríguez Alfaro 2035732 ITS</strong></p>
+                        <p>
+
+                        </p>
+                    </div>
+
+
+
+
+
+
+                    <div>
                         <p> <strong>José Francisco Guerrero Mata 1819702 IAS</strong></p>
                         <p>
-                            El uso de CSS es muy importante para darle diseño de color y tamaño a nuestra página web por
-                            completo,
-                            existen muchas etiquetas para poder modificar el color de las letras, el tamaño del texto,
-                            pero
-                            también
-                            debemos de tener en cuenta al realizar estas modificaciones que no todos los usuarios que
-                            entren
-                            a la página
-                            la puedan ver como se realizó en un principio, esto debido a que cada usuario cuenta con su
-                            propia
-                            configuración de letras predeterminadas, asimismo aprendí más de como modificar y diseñar
-                            dentro
-                            de una
-                            página web para poder llevarlo a mi proyecto final.
+
                         </p>
 
                     </div>
