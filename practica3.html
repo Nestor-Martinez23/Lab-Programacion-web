@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.css">
+    <title>Practica No. 3</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="encabezado">
+            <h1>Practica No. 3 EQUIPO #6</h1>
+        </div>
+
+        <div class="concepto">
+            <div class="concepto__info">
+                <h2>Introducción a la presentación en pantalla con CSS</h2>
+                <h3>El papel del archivo de reset CSS</h3>
+                <p>Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada
+                    navegador. Ya hemos visto en el capítulo precedente cómo CSS nos permite definir estilos para tipos
+                    de letra, modificando el tamaño y la fuente, pero hay otros estilos no tan obvios.
+                    Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así:
+                </p>
+                <p>
+                    Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de
+                    reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más
+                    frecuencia.
+                </p>
+
+            </div>
+            <div>
+                <img src="imagenes2/margin.png" alt="imagen">
+            </div>
+        </div>
+
+        <div>
+            <h3>
+                Ampliación de la hoja de estilos de reset
+            </h3>
+            <p>
+                EL uso de hojas de reset CSS puede tener algunas desventajas, sobre todo para los neófitos: tendrán que
+                recordar constantemente que están utilizando dicha hoja de estilos y deben tener en cuenta cómo afectará
+                a los distintos elementos del sitio web. Si estamos aplicando la hoja de reset a todo el sitio, algunos
+                de sus efectos pueden resultar sorprendentes, sobre todo con elementos con los que no estamos
+                especialmente familiarizados. Por ejemplo, un archivo CSS de reset elimina los márgenes externos e
+                internos de la mayoría de los elementos de los formularios, y cuando utilizan por primera vez con campos
+                de formulario, muchos se preguntan por qué los botones, campos de texto y otros elementos aparecen de
+                esa forma.
+
+            </p>
+
+
+        </div>
+
+        <div>
+            <h3>
+                Breve historia de las técnicas de presentación en pantalla para la Web
+            </h3>
+            <p>
+                Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear para crear
+                estructuras visuales complejas, como por ejemplo la presentación en varias columnas, consistía en
+                emplear el elemento tabla (
+            <table>). La tabla HTML estaba pensada inicialmente para mostrar datos de manera estructurada, en filas,
+                columnas y celdas. Sin embargo, los diseñadores empezaron a utilizar este elemento como base para las
+                estructuras visuales de las páginas.
+
+                </p>
+                <p>
+                    A partir de aquí, empezaron a utilizarse técnicas como el anidamiento de tablas, es decir, crear
+                    tablas dentro de celdas de otras tablas de mayor tamaño.
+
+                </p>
+                <p>
+                    CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos de
+                    tabla de HTML van regresando, poco a poco, a su función original, que es la de mostrar datos
+                    estructurados, y abandonan su papel como armazón visual de las páginas. Seguramente podrás seguir
+                    encontrando numerosos ejemplos de este tipo de estructuras en la web, pero en este libro no vas a
+                    aprender a crearlas, sino que vas a aprender los conceptos básicos de CSS que nos permiten obtener
+                    los mismos resultados.
+                </p>
+
+
+        </div>
+        <div>
+            <h3>
+                El elemento <.div>: creación de una estructura CSS de dos columnas con anchura fija
+            </h3>
+            <p>
+                Podemos considerar al elemento
+            <div> como un contenedor genérico en el que podemos poner elementos relacionados entre sí de forma lógica.
+                La apertura y cierre de etiquetas <.div> suele hacerse rodeando a otros elementos de la página, de forma
+                    que dichos elementos quedan anidados dentro del contenedor. Puedes tener en la misma página todos
+                    los elementos <.div> que consideres necesarios y con frecuencia se utilizan para crear el armazón
+                        visual.
+                        </p>
+                        <p>
+                            Un elemento
+                            <.div> suele llevar un atributo ID (con lo que adquiere un “nombre” explícito dentro de la
+                                página) o bien pertenecer a una clase CSS, utilizándose ambos como medio para aplicar al
+                                contenedor uno o más estilos CSS. El empleo de elementos <.div> facilita a otras
+                                    personas la
+                                    identificación de las diversas secciones en que se subdivide la página y también nos
+                                    ayuda a controlar y aplicar estilos en cada una de ellas.
+                        </p>
+            </div>
+
+            <div>
+                <h3>
+                    ¿Que es un CSS?
+                </h3>
+                <p>
+                    CSS son las siglas en inglés para «hojas de estilo en cascada» (Cascading Style
+                    Sheets).
+                    Básicamente, es
+                    un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo
+                    lucen cuando un
+                    usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido
+                    básico de las
+                    páginas.
+                </p>
+                <p>
+                    Se les denomina hojas de estilo «en cascada» porque puedes tener varias hojas y una
+                    de ellas con las
+                    propiedades heredadas (o «en cascada») de otras.
+                </p>
+
+            </div>
+
+            <div>
+                <h3>
+                    ¿Para que sirve un CSS?
+                </h3>
+                <p>
+                    El código CSS hace la vida más fácil al desarrollador front-end al separar la
+                    estructura de un
+                    documento
+                    HTML de su presentación. Dicho de otro modo, el HTML actuaría como es esqueleto de
+                    la web,
+                    definiendo su
+                    estructura básica,<strong>y el CSS añadiría toda la capa de personalización sobre el
+                        que la web
+                        define
+                        su
+                        aspecto final.
+                    </strong>
+
+                </p>
+
+            </div>
+            <div>
+                <h3>
+                    ¿Cuál es la diferencia que sería más difícil de realizar en un sitio web si se
+                    optara por no usar un
+                    CSS?.
+                </h3>
+                <p>
+                    Resultaría muy difícil para un diseñador web realizar cambios en la apariencia de
+                    una web sin
+                    afectar de
+                    manera dramática a su contenido. Ya que tendría que modificar una a una cada
+                    instrucción que se
+                    desea
+                    cambiar, pero al escribir nuestras órdenes CSS en forma de plantilla una única vez
+                    para ser aplicado
+                    luego a todos las páginas que componen nuestra página web.
+                </p>
+            </div>
+
+
+            <div class="conclusiones">
+                <div>
+
+
+                    <h2>Conclusiones</h2>
+                    <div>
+                        <p><strong>Nestor Emiliano Martinez Marin 1798117 ITS</strong></p>
+                        <p>
+                            Gracias a Css se nos permite añadir mejores estilos a nuestros sitios web , las hojas de
+                            estilo pueden compartirse para asi brindar un mismo formato de diseño a varias paginas web
+                            sin la necesidad de escribir mas codigo, Css y Html trabajan muy bien en conjunto dado que
+                            html constituye la base de un sitio web mientras que Css se encarga del estilo por lo que
+                            van de la mano a la hora de la programacion web.
+                        </p>
+
+                    </div>
+                    <div>
+                        <p> <strong>Axel Alexis Chávez Monsiváis 1907168 IAS</strong></p>
+                        <P>
+                            Al acabar la practica pude entender que es mejor utilizar el css a diferencia del HTML, ya
+                            que el css esta más pulido y mas cómodo. Sin embargo, lo mejor es saber utilizar las dos de
+                            manera eficiente para tener la mayor gama de posibilidades al diseñar una página. Hay varios
+                            conceptos que conocía, pero no sabia utilizar adecuadamente o incluso algunos de los cuales
+                            no tenia ni idea, por lo cual siempre es bueno conocer más sobre esto.
+
+                        </P>
+                    </div>
+
+
+                    <div>
+                        <p> <strong>José Ernesto Rodríguez Alfaro 2035732 ITS</strong></p>
+                        <p>
+                            Gracias a esta práctica conocí mejor la estructura de css tanto en sintaxis ,en
+                            instrucciones que no conocía ,y un poco de la historia del desarrollo web y como el css
+                            llego para facilitar la vida de los programadores, así mismo mas conocimiento acerca de cómo
+                            combinar html y css,para tener un diseño web que no solo se vea bien ,sino sea eficiente y
+                            sencillo ala hora de cambios de cualquier tipo.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="navegacion">
+                <nav>
+                    <a href="practica2.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left"
+                            width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                        </svg>
+
+
+                        </svg><br>
+                        <p>Practica No.2</p>
+                    </a>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="36"
+                            height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                        </svg>
+
+                        <br>
+                        <p>Portada</p>
+                    </a>
+                    <a href="practica4.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right"
+                            width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                        </svg>
+
+                        <br>
+                        <p>Practica No.4</p>
+                    </a>
+                </nav>
+            </div>
+        </div>
+</body>
+
+</html>

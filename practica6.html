@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles4.css">
+    <link rel="stylesheet" href="css/styles4.css">
+    <script src="Js/canvas.js"></script>
+    <title>Practica No. 6</title>
+</head>
+
+<body>
+    <section class="contenedor">
+
+        <section class="movimiento">
+
+
+            <div class="encabezado">
+                <h1>Practica No. 6 EQUIPO #6 </h1>
+            </div>
+
+            <section class="navegacion menu">
+                <nav>
+                    <a href="practica5.html">
+                        <p>Practica No. 5</p>
+                    </a>
+                    <a href="index.html">
+                        <p>Portada</p>
+                    </a>
+                    <a href="practica7.html">
+                        <p>Practica No. 7</p>
+                    </a>
+                </nav>
+            </section>
+        </section>
+
+        <section class="contenedor__info">
+            <h2 class="tema">
+                Figura compleja de manera dinamica usando el elemento Canvas
+            </h2>
+
+            <h3><strong><em>¿Que es canvas?</em> </strong></h3>
+
+            <article class="contenedor2">
+
+                <section>
+                    <p>El elemento HTML <strong>canvas</strong> se utiliza para dibujar gráficos, sobre la marcha, a
+                        través de JavaScript.
+
+                        El elemento canvas es solo un contenedor de gráficos. Debe usar JavaScript para dibujar los
+                        gráficos.
+
+                        Canvas tiene varios métodos para dibujar rutas, cuadros, círculos, texto y agregar imágenes.</p>
+                    <p>
+                        Un canvas es un área rectangular en una página HTML. De forma predeterminada, un canvas no tiene
+                        borde ni contenido. <br>
+                        Se denotan asi: < canvas id="myCanvas" width="200" height="100">
+                            < /canvas>
+                    </p>
+                    <p>
+                        <strong>Siempre hay queespecificar un atributo "id" (al que se hará referencia en un script) y
+                            un atributo
+                            "width y height" para definir el tamaño del canvas.</strong>
+                    </p>
+                </section>
+
+            </article>
+
+            <h3><strong><em>Imagen utilizando Canvas</em> </strong></h3>
+
+            <article class="contenedor2" style="display: flex; justify-content: space-evenly; align-items: center;">
+
+                <img id="among" src="imagenes2/us2.png" alt="imagen de un among us" width=220" height="277"
+                    style="border:2px solid ;">
+
+                <div>
+                    <button onclick="myCanvas()" style="width: 70px; height:70px">Dibujar copia en canvas</button>
+
+
+                </div>
+
+                <section>
+
+                    <canvas id="myCanvas" width="350" height="400"
+                        style="border: 2px solid red; background-color: black;">
+
+                    </canvas>
+
+                </section>
+
+
+
+            </article>
+            <section style="display: flex; justify-content: center;">
+                <canvas id="lienzo" width="920" height="920" style="background:burlywood;"></canvas>
+                <script>
+                    var c = document.getElementById("lienzo");
+                    var contexto = c.getContext("2d");             //contorno figura
+                    contexto.fillStyle = "black"
+                    contexto.fillRect(250, 60, 50, 50);
+                    contexto.fillRect(250, 10, 350, 50);
+                    contexto.fillRect(200, 60, 50, 50);
+                    contexto.fillRect(150, 110, 50, 50);
+                    contexto.fillRect(100, 160, 50, 100);
+                    contexto.fillRect(50, 260, 50, 350);
+                    contexto.fillRect(100, 610, 50, 50);
+                    contexto.fillRect(150, 660, 100, 50);
+                    contexto.fillRect(200, 710, 150, 50);
+                    contexto.fillRect(250, 760, 100, 50);
+                    contexto.fillRect(350, 810, 200, 50);
+                    contexto.fillRect(650, 60, 50, 50);
+                    contexto.fillRect(700, 110, 50, 50);
+                    contexto.fillRect(750, 160, 50, 100);
+                    contexto.fillRect(800, 260, 50, 350);
+                    contexto.fillRect(750, 610, 50, 50);
+                    contexto.fillRect(650, 660, 100, 50);
+                    contexto.fillRect(550, 710, 150, 50);
+                    contexto.fillRect(550, 760, 100, 50);
+                    contexto.fillRect(600, 60, 50, 50);
+
+
+                    var b = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "grey"               //negro
+
+
+
+                    contexto.fillRect(150, 510, 50, 50);
+                    contexto.fillRect(700, 510, 50, 50);
+                    contexto.fillRect(200, 560, 150, 50);
+                    contexto.fillRect(550, 560, 150, 50);
+                    contexto.fillRect(300, 610, 50, 100);
+                    contexto.fillRect(550, 610, 50, 100);
+                    contexto.fillRect(400, 610, 100, 50);
+                    contexto.fillRect(350, 510, 200, 50);
+
+
+
+                    var a = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "purple"                //verde oscuro
+                    contexto.fillRect(100, 560, 50, 50);
+                    contexto.fillRect(100, 510, 50, 50);
+                    contexto.fillRect(750, 560, 50, 50);
+                    contexto.fillRect(750, 510, 50, 50);
+
+
+
+
+                    var a = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "red"                 //verde mas claro
+
+                    contexto.fillRect(650, 210, 50, 50);
+                    contexto.fillRect(250, 610, 50, 50);
+                    contexto.fillRect(600, 610, 50, 50);
+                    contexto.fillRect(500, 610, 50, 50);
+                    contexto.fillRect(350, 610, 50, 50);
+                    contexto.fillRect(400, 60, 100, 50);
+                    contexto.fillRect(150, 560, 50, 50);
+                    contexto.fillRect(700, 560, 50, 50);
+                    contexto.fillRect(400, 110, 100, 50);
+                    contexto.fillRect(350, 110, 50, 50);
+                    contexto.fillRect(500, 110, 50, 50);
+                    contexto.fillRect(150, 160, 600, 50);
+                    contexto.fillRect(150, 210, 600, 50);
+                    contexto.fillRect(100, 460, 50, 50);
+                    contexto.fillRect(200, 360, 50, 50);
+                    contexto.fillRect(200, 410, 50, 50);
+                    contexto.fillRect(200, 460, 100, 50);
+                    contexto.fillRect(150, 410, 50, 50);
+                    contexto.fillRect(150, 460, 50, 50);
+                    contexto.fillRect(150, 260, 200, 50);
+                    contexto.fillRect(550, 260, 200, 50);
+                    contexto.fillRect(250, 360, 50, 50);
+                    contexto.fillRect(200, 310, 100, 50);
+                    contexto.fillRect(250, 410, 50, 50);
+                    contexto.fillRect(650, 460, 50, 50);
+                    contexto.fillRect(650, 410, 50, 50);
+                    contexto.fillRect(650, 360, 50, 50);
+                    contexto.fillRect(600, 460, 50, 50);
+                    contexto.fillRect(550, 460, 50, 50);
+                    contexto.fillRect(550, 410, 50, 50);
+                    contexto.fillRect(500, 460, 50, 50);
+                    contexto.fillRect(450, 460, 50, 50);
+                    contexto.fillRect(400, 460, 50, 50);
+                    contexto.fillRect(350, 460, 50, 50);
+                    contexto.fillRect(300, 460, 50, 50);
+                    contexto.fillRect(300, 410, 50, 50);
+                    contexto.fillRect(600, 360, 50, 50);
+                    contexto.fillRect(600, 410, 50, 50);
+                    contexto.fillRect(600, 310, 100, 50);
+                    contexto.fillRect(700, 410, 50, 50);
+                    contexto.fillRect(700, 460, 100, 50);
+
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "#FF9600"                //naranja mas oscuro
+
+
+                    contexto.fillRect(200, 510, 50, 50);
+                    contexto.fillRect(300, 510, 50, 50);
+                    contexto.fillRect(550, 510, 50, 50);
+                    contexto.fillRect(650, 510, 50, 50);
+
+
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "green"                   //blanco
+
+
+
+                    contexto.fillRect(250, 510, 50, 50);
+
+
+                    contexto.fillRect(600, 510, 50, 50);
+
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "white"                   //Fondo blanco
+
+                    contexto.fillRect(0, 11, 250, 50);
+                    contexto.fillRect(650, 11, 270, 50);
+                    contexto.fillRect(700, 60, 230, 50);
+                    contexto.fillRect(750, 110, 170, 50);
+                    contexto.fillRect(800, 160, 130, 50);
+                    contexto.fillRect(800, 210, 130, 50);
+                    contexto.fillRect(850, 260, 80, 50);
+                    contexto.fillRect(850, 310, 80, 50);
+                    contexto.fillRect(850, 360, 80, 50);
+                    contexto.fillRect(850, 410, 80, 50);
+                    contexto.fillRect(850, 460, 80, 50);
+                    contexto.fillRect(850, 510, 80, 50);
+                    contexto.fillRect(850, 560, 80, 50);
+                    contexto.fillRect(800, 610, 170, 50);
+                    contexto.fillRect(750, 660, 170, 50);
+                    contexto.fillRect(700, 710, 230, 50);
+                    contexto.fillRect(650, 760, 270, 50);
+                    contexto.fillRect(550, 810, 370, 50);
+                    contexto.fillRect(0, 860, 920, 50);
+                    contexto.fillRect(0, 810, 350, 50);
+                    contexto.fillRect(0, 760, 250, 50);
+                    contexto.fillRect(0, 710, 200, 50);
+                    contexto.fillRect(0, 660, 150, 50);
+                    contexto.fillRect(0, 610, 100, 50);
+                    contexto.fillRect(0, 60, 50, 600);
+                    contexto.fillRect(0, 60, 200, 50);
+                    contexto.fillRect(0, 110, 150, 50);
+                    contexto.fillRect(50, 160, 50, 100);
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "black"                   //Borde Canva
+
+                    contexto.fillRect(0, 910, 920, 10);
+                    contexto.fillRect(910, 0, 10, 910);
+                    contexto.fillRect(0, 0, 10, 920);
+                    contexto.fillRect(0, 0, 920, 10);
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "yellow"
+                    //verde oscuro
+                    contexto.fillRect(150, 610, 100, 50);
+                    contexto.fillRect(350, 560, 200, 50);
+                    contexto.fillRect(650, 610, 100, 50);
+                    contexto.fillRect(600, 660, 50, 50);
+                    contexto.fillRect(250, 660, 50, 50);
+                    contexto.fillRect(350, 660, 200, 150);
+
+
+
+                    var d = document.getElementById("lienzo");
+                    var contexto = lienzo.getContext("2d");
+                    contexto.fillStyle = "#118ACC"
+                    //fondo - azul
+                    contexto.fillRect(10, 10, 40, 900);
+                    contexto.fillRect(50, 10, 50, 250);
+                    contexto.fillRect(100, 10, 50, 150);
+                    contexto.fillRect(150, 10, 50, 100);
+                    contexto.fillRect(200, 10, 50, 50);
+                    contexto.fillRect(250, 10, 50, 50);
+
+
+                    contexto.fillRect(650, 10, 50, 50);
+                    contexto.fillRect(700, 10, 50, 100);
+                    contexto.fillRect(750, 10, 50, 150);
+                    contexto.fillRect(800, 10, 50, 250);
+
+                    contexto.fillRect(850, 10, 60, 900);
+                    contexto.fillRect(50, 610, 50, 300);
+                    contexto.fillRect(100, 660, 50, 250);
+                    contexto.fillRect(150, 710, 50, 200);
+                    contexto.fillRect(200, 760, 50, 150);
+                    contexto.fillRect(250, 810, 100, 100);
+
+                    contexto.fillRect(800, 610, 50, 300);
+                    contexto.fillRect(750, 660, 50, 250);
+                    contexto.fillRect(700, 710, 50, 200);
+                    contexto.fillRect(650, 760, 50, 150);
+                    contexto.fillRect(550, 810, 100, 100);
+
+                    contexto.fillRect(350, 860, 200, 50);
+
+                </script>
+            </section>
+
+
+
+        </section>
+
+        <div class="conclusiones">
+            <div>
+
+
+                <h3 class="tema">Conclusiones</h2>
+
+                    <div>
+                        <p><strong>Nestor Emiliano Martinez Marin 1798117 ITS</strong></p>
+                        <p>
+                            El elemento canvas en Html nos permite generar graficos y animaciones de una manera
+                            dinamica, por medio de scripts y que gracias a estos se pueden crear animaciones que den mas
+                            persdonalidad a nuestra pagina web y todo esto sin la necesidad de insatalar programamas o
+                            complementos en nuestro naveagdor.
+
+                        </p>
+
+                    </div>
+                    <div>
+                        <p> <strong>Axel Alexis Chávez Monsiváis 1907168 IAS</strong></p>
+                        <P>
+                            cuando comence la practica no tenia idea de como hacerlo, pero luego de investigar y
+                            haciendolo poco a poco al final empezaba a ser algo muy facil de hacer, a pesar de que es
+                            tardado, en verdad no es dificil, sin embargo aun asi de vez en cuando me confundia pero
+                            cuando empece a saber usar mejor las cordenadas el dibujo fue haciendose cada vez mas facil
+                            y rapido, esta es una herramienta que tal vez no es muy conveniente en muchas paginas pero
+                            habra otras que sera muy util.
+
+                        </P>
+                    </div>
+                    <div>
+                        <p><strong>Ángel Gabriel Martinez Belmares 1904590 ITS</strong> </p>
+                        <p>
+                            Después de haber realizado esta práctica puedo concluir que usando HTML y CSS se pueden
+                            hacer cosas que no sabía, por lo cuál debería seguir investigando qué es lo que estas
+                            tecnologías nos permiten hacer como programadores web.
+
+                        </p>
+                    </div>
+                    <div>
+                        <p> <strong>José Ernesto Rodríguez Alfaro 2035732 ITS</strong></p>
+                        <p>
+                            La práctica me resulto muy interesante ya que nunca había visto como se programaba para
+                            hacer figuras, mucho menos dibujos, y al investigar vi que no era tan difícil, solo se
+                            necesita mucha paciencia y saber las figuras ,este tipo de dibujo en código puede ayudar a
+                            graficar algún resultado de un programa.
+
+
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p> <strong>José Francisco Guerrero Mata 1819702 IAS</strong></p>
+                        <p>
+                            Como no-programador no tenía ni idea de que para crear una figura de ese estilo, se hacía
+                            por programación, en un principio se nos dificultó pero gracias a lo antes visto en HTML y
+                            CSS, pudimos realizar la práctica con éxito.
+
+                        </p>
+
+                    </div>
+                   
+            </div>
+
+        </div>
+
+
+
+        <div class="navegacion">
+            <nav>
+                <a href="practica5.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left"
+                        width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z" />
+                    </svg>
+                    <br>
+                    <p>Practica No. 5</p>
+                </a>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="36"
+                        height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                    </svg>
+                    <br>
+                    <p>Portada</p>
+                </a>
+                <a href="practica7.html">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right"
+                        width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                    </svg>
+                    <br>
+                    <p>Practica No. 7</p>
+                </a>
+            </nav>
+        </div>
+        <footer>
+            <p>
+                Laboratorio de Programacion Web - Equipo #6
+            </p>
+        </footer>
+
+    </section>
+</body>
+
+</html>
